@@ -10,7 +10,7 @@ if number < 0:
 
 lastDigit = number % 10
 
-if isNegative == True:
+if isNegative is True:
     lastDigit *= -1
     number *= -1
 
