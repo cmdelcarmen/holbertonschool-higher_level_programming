@@ -10,4 +10,4 @@ if __name__ == "__main__":
         for count in range(1, (len(sys.argv))):
             sumOfAllArgv += int(sys.argv[count])
 
-        print(sumOfAllArgv)
+    print(sumOfAllArgv)
