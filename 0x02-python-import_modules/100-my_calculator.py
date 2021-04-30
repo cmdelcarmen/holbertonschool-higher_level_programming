@@ -5,27 +5,24 @@ import sys
 
 if __name__ == "__main__":
 
-    calculatedResult = 0
-
     if len(sys.argv) != 4:
         print("Usage: ./100-my_calculator.py <a> <operator> <b>")
         exit(1)
 
-    elif (sys.argv[2] == '+'):
-        print("{} + {} = ".format(sys.argv[1], sys.argv[3]), end="")
-        print(add(int(sys.argv[1]), int(sys.argv[3])))
+    num1 = int(sys.argv[1])
+    num2 = int(sys.argv[3])
+
+    if (sys.argv[2] == '+'):
+        print("{:d} + {:d} = {:d}".format(num1, num2, add(num1, num2)))
 
     elif (sys.argv[2] == '-'):
-        print("{} - {} = ".format(sys.argv[1], sys.argv[3]), end="")
-        print(sub(int(sys.argv[1]), int(sys.argv[3])))
+        print("{:d} - {:d} = {:d}".format(num1, num2, sub(num1, num2)))
 
     elif (sys.argv[2] == '*'):
-        print("{} * {} = ".format(sys.argv[1], sys.argv[3]), end="")
-        print(mul(int(sys.argv[1]), int(sys.argv[3])))
+        print("{:d} * {:d} = {:d}".format(num1, num2, mul(num1, num2)))
 
     elif (sys.argv[2] == '/'):
-        print("{} / {} = ".format(sys.argv[1], sys.argv[3]), end="")
-        print(div(int(sys.argv[1]), int(sys.argv[3])))
+        print("{:d} / {:d} = {:d}".format(num1, num2, div(num1, num2)))
 
     else:
         print("Unknown operator. Available operators: +, -, * and /")
