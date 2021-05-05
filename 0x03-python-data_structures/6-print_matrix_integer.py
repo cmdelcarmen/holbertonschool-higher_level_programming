@@ -3,7 +3,7 @@
 
 def print_matrix_integer(matrix=[[]]):
 
-    for count in range(0, 3):
-        for count1 in range(0 , 3):
-            print(matrix[count][count1], end=" ")
+    for count in range(len(matrix)):
+        for count1 in range(len(matrix[count])):
+            print("{:d}".format(matrix[count][count1]), end="")
         print()
