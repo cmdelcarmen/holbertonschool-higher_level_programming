@@ -11,5 +11,5 @@ def print_matrix_integer(matrix=[[]]):
             print("{:d}".format(matrix[count][count1]), end="")
 
             if count1 != ((len(matrix) - 1)):
-                print(" ", end ="")
+                print(" ", end="")
         print()
