@@ -7,7 +7,6 @@ def update_dictionary(a_dictionary, key, value):
         return None
 
     if len(key) == 0:
-        print("none")
         return None
 
     for word in sorted(a_dictionary):

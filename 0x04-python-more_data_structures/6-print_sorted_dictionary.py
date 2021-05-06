@@ -3,7 +3,8 @@
 
 def print_sorted_dictionary(a_dictionary):
 
-    sorted(a_dictionary)
+    if not a_dictionary:
+        return None
 
     for word in sorted(a_dictionary):
         print(word, end="")
