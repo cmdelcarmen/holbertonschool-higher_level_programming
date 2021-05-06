@@ -9,14 +9,14 @@ def roman_to_int(roman_string):
     new_roman_string = ''.join(reversed(roman_string))
 
     if len(new_roman_string) == 0:
-        return None
+        return 0
 
     if not isinstance(roman_string, str):
-        return None
+        return 0
 
     for romanLetter in new_roman_string:
         if romanLetter not in romanDi:
-            return None
+            return 0
 
         if romanDi[romanLetter] >= prevValue:
             integer += romanDi[romanLetter]
