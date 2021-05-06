@@ -4,7 +4,9 @@
 def multiple_returns(sentence):
 
     if len(sentence) == 0:
-        return None
+        sentence += 'None'
+
+    print(len(sentence))
 
     lengthOfSentence = len(sentence)
     firstLetterOfSentence = sentence[0]
