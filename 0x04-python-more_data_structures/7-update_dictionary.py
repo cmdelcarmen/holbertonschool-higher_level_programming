@@ -3,11 +3,14 @@
 
 def update_dictionary(a_dictionary, key, value):
 
-    if not a_dictionary:
+    if a_dictionary is None:
         return None
 
     if len(key) == 0:
         return None
+
+    if len(a_dictionary) == 0:
+        a_dictionary[key] = value
 
     for word in sorted(a_dictionary):
         if word == key:
