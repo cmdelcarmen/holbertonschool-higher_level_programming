@@ -1,15 +1,14 @@
 #!/usr/bin/python3
 
 
-def max_integer(my_list=[]):
+def multiple_returns(sentence):
 
-    if my_list is None:
+    if len(sentence) == 0:
         return None
 
-    largestNum = my_list[0]
+    lengthOfSentence = len(sentence)
+    firstLetterOfSentence = sentence[0]
 
-    for count in range(0, len(my_list)):
-        if largestNum < my_list[count]:
-            largestNum = my_list[count]
+    sentence_tuple = lengthOfSentence, firstLetterOfSentence
 
-    return largestNum
+    return sentence_tuple
