@@ -11,10 +11,13 @@ def roman_to_int(roman_string):
     if len(new_roman_string) == 0:
         return None
 
-    if type(roman_string) is not str:
+    if not isinstance(roman_string, str):
         return None
 
     for romanLetter in new_roman_string:
+        if romanLetter not in romanDi:
+            return None
+
         if romanDi[romanLetter] >= prevValue:
             integer += romanDi[romanLetter]
         else:
