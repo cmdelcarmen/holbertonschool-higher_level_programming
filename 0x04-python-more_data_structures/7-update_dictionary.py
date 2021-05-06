@@ -3,7 +3,8 @@
 
 def update_dictionary(a_dictionary, key, value):
 
-    sorted(a_dictionary)
+    if not a_dictionary:
+        return None
 
     for word in sorted(a_dictionary):
         if word == key:
