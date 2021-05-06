@@ -6,4 +6,6 @@ def print_sorted_dictionary(a_dictionary):
     sorted(a_dictionary)
 
     for word in sorted(a_dictionary):
-        print(word, ":", a_dictionary[word])
+        print(word, end="")
+        print(":", end=" ")
+        print(a_dictionary[word])
