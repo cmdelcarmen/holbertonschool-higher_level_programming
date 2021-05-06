@@ -8,7 +8,7 @@ def roman_to_int(roman_string):
     prevValue = 0
     new_roman_string = ''.join(reversed(roman_string))
 
-    if new_roman_string is None:
+    if len(new_roman_string) == 0:
         return None
 
     if type(roman_string) is not str:
