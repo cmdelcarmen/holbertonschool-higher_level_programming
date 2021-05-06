@@ -6,6 +6,10 @@ def update_dictionary(a_dictionary, key, value):
     if not a_dictionary:
         return None
 
+    if len(key) == 0:
+        print("none")
+        return None
+
     for word in sorted(a_dictionary):
         if word == key:
             a_dictionary[word] = value
