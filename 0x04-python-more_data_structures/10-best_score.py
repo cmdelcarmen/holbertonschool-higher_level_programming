@@ -9,8 +9,9 @@ def best_score(a_dictionary):
     if a_dictionary is None:
         return None
 
-    for key in sorted(a_dictionary):
+    for key in a_dictionary:
         if a_dictionary[key] > largestScore:
+            largestScore = a_dictionary[key]
             largestScore_name = key
 
     return largestScore_name
