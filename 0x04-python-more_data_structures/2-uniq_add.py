@@ -4,14 +4,8 @@
 def uniq_add(my_list=[]):
 
     total = 0
-    numbersAdded = []
 
-    total += my_list[0]
-    numbersAdded.append(my_list[0])
-
-    for number in my_list:
-        if number not in numbersAdded:
+    for number in set(my_list):
             total += number
-            numbersAdded.append(number)
 
     return total
