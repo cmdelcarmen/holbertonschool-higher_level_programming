@@ -6,7 +6,7 @@
 
   <h3 align="center">Styled using PEP 8 1.7 guidelines on Ubuntu 10.04 LTS.</h3>
 
-  | Directories | Learning Goal |
+  | Directories | Learning Goal 🤓 |
   | --- | --- |
   | [0x00-python-hello_world](https://github.com/cmdelcarmen/holbertonschool-higher_level_programming/tree/main/0x00-python-hello_world) | Writing basic python scripts, how to handle strings, indexing and slicing, how to use a Python interpreter and variables |
   | [0x01-python-if_else_loops_functions](https://github.com/cmdelcarmen/holbertonschool-higher_level_programming/tree/main/0x01-python-if_else_loops_functions) | Writing loops in python, conditional statements, range, indentation, comments, break, continue, pass, and return |
