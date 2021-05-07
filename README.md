@@ -1,12 +1,12 @@
-<h1 align="center">Python 3.4.3 🐍 😊 <h1>
+<h1 align="center">Python 3.4.3 🐍 </h1>
 
 <p align="center">
   <img width="700" height="350" src="https://i.pinimg.com/originals/d1/fb/d3/d1fbd34f47639a88b60715e6936d6dbf.gif">
   </p>
 
-  <h1 align="center">Pinned Repositories</h1>
+  <h3 align="center">Styled using PEP 8 1.7 guidelines on Ubuntu 10.04 LTS.</h3>
 
-  | Repository | Description |
+  | Directories | Description |
   | --- | --- |
   | [0x00-python-hello_world](https://github.com/cmdelcarmen/holbertonschool-higher_level_programming/tree/main/0x00-python-hello_world) | Description |
   | [0x01-python-if_else_loops_functions](https://github.com/cmdelcarmen/holbertonschool-higher_level_programming/tree/main/0x01-python-if_else_loops_functions) | Description |
