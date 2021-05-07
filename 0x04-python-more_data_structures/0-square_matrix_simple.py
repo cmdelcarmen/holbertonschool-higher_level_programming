@@ -3,13 +3,9 @@
 
 def square_matrix_simple(matrix=[]):
 
-    newList = []
     newMatrix = []
 
-    for x in range(len(matrix)):
-        for y in range(len(matrix)):
-            newList.append(matrix[x][y] ** 2)
-        newMatrix += [newList]
-        newList = []
+    for row in range(len(matrix)):
+        newMatrix.append(list(map(lambda x: x ** 2, matrix[row])))
 
     return(newMatrix)
