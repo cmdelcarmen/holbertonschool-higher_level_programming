@@ -1,5 +1,9 @@
 <h1 align="center">Python 3.4.3 🐍 </h1>
 
+<p align="center">
+  <img width="700" height="350" src="https://i.pinimg.com/originals/d1/fb/d3/d1fbd34f47639a88b60715e6936d6dbf.gif">
+  </p>
+  
   <h3 align="center">Styled using PEP 8 1.7 guidelines on Ubuntu 14.04 LTS.</h3>
 
   | Directories | Learning Goal 🤓 |
