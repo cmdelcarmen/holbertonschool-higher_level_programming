@@ -8,10 +8,6 @@ class Square:
         '''Initializes private class attribute size'''
         self.__size = size
 
-    def area(self):
-        '''Class method returns area'''
-        return (self.__size * self.__size)
-
     @property
     def size(self):
         '''Class method returns value of instance'''
@@ -20,9 +16,12 @@ class Square:
     @size.setter
     def size(self, value):
         '''Class method returns value of instance'''
-        try:
-            self.__size = value
-            if value < 0:
-                raise ValueError("size must be >= 0")
-        except TypeError:
+        if not type(value) is int:
             raise TypeError("size must be integer")
+        if value < 0:
+            raise ValueError("size must be >= 0")
+        self.__size = value
+
+    def area(self):
+        '''Class method returns area'''
+        return (self.__size * self.__size)
