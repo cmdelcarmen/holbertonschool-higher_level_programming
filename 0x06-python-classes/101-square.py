@@ -36,5 +36,3 @@ class Square:
     def my_print(self):
         '''prints'''
         pass
-
-
