@@ -1,0 +1,30 @@
+Test file for add function
+
+>>> add = __import__('0-add_integer').add_integer
+
+>>> add(1, 2)
+3
+
+>>> add("a", "b")
+Traceback (most recent call last):
+....
+TypeError: a must be an integer
+
+>>> add(1.5, 2)
+3
+
+>>> add(1, 2.5)
+3
+
+>>> add(1.5, 2.5)
+3
+
+>>> add("TypeErrorTest", 2)
+Traceback (most recent call last):
+....
+TypeError: a must be an integer
+
+>>> add(1, "TypeErrorTest")
+Traceback (most recent call last):
+....
+TypeError: b must be an integer
