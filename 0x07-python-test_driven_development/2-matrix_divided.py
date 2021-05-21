@@ -1,7 +1,6 @@
 #!/usr/bin/python3
 '''File contains matrix_divided function'''
 
-
 def matrix_divided(matrix, div):
 
     '''Matrix_divided - funtion divides all elements of a matrix,
@@ -23,7 +22,6 @@ def matrix_divided(matrix, div):
         for element in row:
             if not type(element) is int and not type(element) is float:
                 raise TypeError("matrix must be a matrix (list of lists) of integers/floats")
-
 
     '''div input validation'''
     if not type(div) is int and not type(div) is float:
