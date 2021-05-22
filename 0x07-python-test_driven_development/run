@@ -1,1 +1,1 @@
-python3 -m doctest -v ./tests/2-matrix_divided.txt
+python3 -m doctest -v ./tests/0-add_integer.txt
