@@ -1,4 +1,13 @@
-Test file for add function
+Test file for file 2-matrix_divided.py.
+
+File contains:
+
+matrix_divided(matrix, div): Function takes a matrix as the first parameter,
+	and a number to divide each element of the matrix by as the second parameter.
+	Meant to handle matrix that contain rows that all have the same length.
+
+Regular use test:
+-----------------
 
 >>> div = __import__('2-matrix_divided').matrix_divided
 
@@ -11,6 +20,10 @@ Test file for add function
 >>> div(matrix, 1.5)
 [[1.33, 2.67, 4.0], [5.33, 6.67, 8.0]]
 
+
+
+Passing wrong types or amount of parameters to function:
+--------------------------------------------------------
 >>> matrix = [[2, 4, 6], [8, 10, 12]]
 >>> div(matrix, "b")
 Traceback (most recent call last):
@@ -42,3 +55,21 @@ TypeError: matrix must be a matrix (list of lists) of integers/floats
 Traceback (most recent call last):
 ...
 ZeroDivisionError: division by zero
+
+>>> matrix = None
+>>> div(None, 2)
+Traceback (most recent call last):
+...
+TypeError: matrix must be a matrix (list of lists) of integers/floats
+
+>>> matrix = None
+>>> div(None, None)
+Traceback (most recent call last):
+...
+TypeError: matrix must be a matrix (list of lists) of integers/floats
+
+>>> matrix = [[2, 4, 6], [8, 10, 12]]
+>>> div(matrix, None)
+Traceback (most recent call last):
+...
+TypeError: div must be a number
