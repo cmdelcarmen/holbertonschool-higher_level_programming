@@ -1,0 +1,18 @@
+Test file for name function
+
+>>> name = __import__('3-say_my_name').say_my_name
+>>> name("Caroline", "Del Carmen")
+Caroline Del Carmen
+
+
+>>> name = __import__('3-say_my_name').say_my_name
+>>> name("Caroline", "")
+Caroline 
+
+>>> name = __import__('3-say_my_name').say_my_name
+>>> name("", "Del Carmen")
+ Del Carmen
+
+>>> name = __import__('3-say_my_name').say_my_name
+>>> name("Caroline", 2)
+TypeError: last_name must be a string
