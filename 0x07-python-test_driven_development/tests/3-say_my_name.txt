@@ -33,3 +33,14 @@ TypeError: last_name must be a string
 Traceback (most recent call last):
 ...
 TypeError: first_name must be a string
+
+>>> name("Caroline", None)
+Traceback (most recent call last):
+...
+TypeError: last_name must be a string
+
+>>> name(None, "Del Carmen")
+Traceback (most recent call last):
+...
+TypeError: first_name must be a string
+
