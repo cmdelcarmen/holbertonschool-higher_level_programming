@@ -1,0 +1,19 @@
+Test file for 5-text_indentation.py.
+
+5-text_indentation.py contains:
+
+text-indentaation(text): Function prints the given text, but does 2 new lines
+	after each of these characters: . : ?. No lines start or end with a space
+-----------------------------------------------------------------------------
+
+print = __import__('5-text_indentation').text_indentation
+
+
+>>> print("Hello. My name is: Caroline. Yours?")
+Hello.
+My name is:
+Caroline.
+Yours?
+
+>>> print(None)
+None
