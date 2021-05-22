@@ -13,6 +13,8 @@ Regular use:
 >>> name("Caroline", "Del Carmen")
 My name is Caroline Del Carmen
 
+>>> name("", "")
+My name is  
 
 Passing wrong type or wrong amount of arguments:
 ------------------------------------------------
