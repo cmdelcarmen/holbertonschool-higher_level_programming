@@ -2,16 +2,16 @@ Test file for name function
 
 >>> name = __import__('3-say_my_name').say_my_name
 >>> name("Caroline", "Del Carmen")
-Caroline Del Carmen
+My name is Caroline Del Carmen
 
 
 >>> name = __import__('3-say_my_name').say_my_name
 >>> name("Caroline", "")
-Caroline 
+My name is Caroline 
 
 >>> name = __import__('3-say_my_name').say_my_name
 >>> name("", "Del Carmen")
- Del Carmen
+My name is  Del Carmen
 
 >>> name = __import__('3-say_my_name').say_my_name
 >>> name("Caroline", 2)
