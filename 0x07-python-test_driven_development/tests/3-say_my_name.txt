@@ -1,20 +1,33 @@
-Test file for name function
+Test file for 3-say_my_name.py.
+
+Contains:
+
+say_my_name(first_name, last_name=""): Fucntion takes first and last name and returns
+	"My name is "first_name" and "last_name".
+=====================================================================================
 
 >>> name = __import__('3-say_my_name').say_my_name
+
+Regular use:
+------------
 >>> name("Caroline", "Del Carmen")
 My name is Caroline Del Carmen
 
 
->>> name = __import__('3-say_my_name').say_my_name
+Passing wrong type or wrong amount of arguments:
+------------------------------------------------
 >>> name("Caroline", "")
 My name is Caroline 
 
->>> name = __import__('3-say_my_name').say_my_name
 >>> name("", "Del Carmen")
 My name is  Del Carmen
 
->>> name = __import__('3-say_my_name').say_my_name
 >>> name("Caroline", 2)
 Traceback (most recent call last):
 ...
 TypeError: last_name must be a string
+
+>>> name(None, None)
+Traceback (most recent call last):
+...
+TypeError: first_name must be a string
