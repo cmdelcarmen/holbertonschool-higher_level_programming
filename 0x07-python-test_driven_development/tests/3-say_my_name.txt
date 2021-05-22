@@ -15,4 +15,6 @@ Caroline
 
 >>> name = __import__('3-say_my_name').say_my_name
 >>> name("Caroline", 2)
+Traceback (most recent call last):
+...
 TypeError: last_name must be a string
