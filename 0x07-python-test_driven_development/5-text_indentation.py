@@ -4,32 +4,32 @@
 
 def text_indentation(text):
     '''This function prints the given text, but does 2 new lines
-    after each of these characters: . ? : 
+    after each of these characters: . ? :
     Printed lines cannot start or end with spaces'''
 
-    int_index = 0
-    int_beginning_spaces = 1
+    idx = 0
+    beginning_spaces = 1
 
-    while (int_index < len(text)):
-        if int_beginning_spaces == 1:
+    while (idx < len(text)):
+        if beginning_spaces == 1:
             '''takes care of input that start with a bunch of spaces'''
-            while(text[int_index] == " "):
-                int_index += 1
-            int_beginning_spaces = 0
+            while(text[idx] == " "):
+                idx += 1
+            beginning_spaces = 0
 
-        print(text[int_index], end="")
+        print(text[idx], end="")
 
-        if text[int_index] == '.' or text[int_index] == ':' or text[int_index] == '?':
-                 print()
-                 print()
-                 if int_index < (len(text) - 1):
-                     '''makes sure program is not trying to read an out of range value'''
-                     if text[int_index + 1] == " ":
-                        '''makes sure next printed line does not start with a space'''
-                        while(text[int_index + 1] == " " and (int_index < (len(text) - 1))):
-                            int_index += 1
-                            if int_index >= len(text) - 1:
-                                '''breaks before trying to read an out of range value'''
+        if text[idx] == '.' or text[idx] == ':' or text[idx] == '?':
+                print()
+                print()
+                if idx < (len(text) - 1):
+                    '''makes sure next printed line does not start with a space
+                    if statements make sure program is not trying to read
+                    an out of range value'''
+                    if text[idx + 1] == " ":
+                        while(text[idx + 1] == " " and idx < (len(text) - 1)):
+                            idx += 1
+                            if idx >= len(text) - 1:
                                 break
 
-        int_index += 1
+        idx += 1
