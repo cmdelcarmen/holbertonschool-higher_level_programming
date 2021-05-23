@@ -4,18 +4,24 @@
 
 def text_indentation(text):
     '''This function prints the given text, but does 2 new lines
-    after each of these characters: . ? : '''
+    after each of these characters: . ? : 
+    Printed lines cannot start or end with spaces'''
 
-    int_do_not_print = 0
+    int_index = 0
+    beginning_spaces = 1
 
-    for index in range(0, len(text)):
-        if int_do_not_print == 1:
-            int_do_not_print = 0
-            continue
+    while (int_index < len(text)):
+        if beginning_spaces == 1:
+            '''takes care of input that start with a bunch of spaces'''
+            while(text[int_index] == " "):
+                int_index += 1
+            beginning_spaces = 0
 
-        print(text[index], end="")
+        print(text[int_index], end="")
 
-        if text[index] == '.' or text[index] == ':' or text[index] == '?':
-            print()
-            print()
-            int_do_not_print = 1
+        if text[int_index] == '.' or text[int_index] == ':' or text[int_index] == '?':
+                 print()
+                 print()
+                 int_index+= 1
+
+        int_index += 1
