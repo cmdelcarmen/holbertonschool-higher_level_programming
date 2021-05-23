@@ -1,7 +1,7 @@
 #!/usr/bin/python3
 say_my_name = __import__('3-say_my_name').say_my_name
 
-say_my_name("John", 2)
+say_my_name("John", "Smith")
 say_my_name("", "White")
 say_my_name("Bob")
 say_my_name("", "")
