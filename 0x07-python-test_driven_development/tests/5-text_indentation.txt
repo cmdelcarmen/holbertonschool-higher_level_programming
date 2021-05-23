@@ -6,14 +6,25 @@ text-indentaation(text): Function prints the given text, but does 2 new lines
 	after each of these characters: . : ?. No lines start or end with a space
 -----------------------------------------------------------------------------
 
-print = __import__('5-text_indentation').text_indentation
+>>> text = __import__('5-text_indentation').text_indentation
 
 
->>> print("Hello. My name is: Caroline. Yours?")
+>>> text("Hello. My name is: Caroline. Yours?")
 Hello.
+<BLANKLINE>
 My name is:
+<BLANKLINE>
 Caroline.
+<BLANKLINE>
 Yours?
+<BLANKLINE>
 
->>> print(None)
-None
+>>> text(None)
+Traceback (most recent call last):
+....
+TypeError: text must be a string
+
+>>> text(3)
+Traceback (most recent call last):
+....
+TypeError: text must be a string

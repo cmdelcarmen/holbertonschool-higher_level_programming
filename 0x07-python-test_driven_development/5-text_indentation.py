@@ -10,6 +10,9 @@ def text_indentation(text):
     idx = 0
     beginning_spaces = 1
 
+    if not type(text) is str:
+        raise TypeError("text must be a string")
+
     while (idx < len(text)):
         if beginning_spaces == 1:
             '''takes care of input that start with a bunch of spaces'''
