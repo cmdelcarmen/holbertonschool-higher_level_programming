@@ -8,8 +8,8 @@ class Rectangle:
 
     def __init__(self, width=0, height=0):
         '''creates an instance of a class'''
-        self.__width = width
-        self.__height = height
+        self.width = width
+        self.height = height
 
     @property
     def width(self):
@@ -21,9 +21,10 @@ class Rectangle:
         '''validates width input and defines it'''
         if not type(value) is int:
             raise TypeError("width must be integer")
-        if value < 0:
+        elif value < 0:
             raise ValueError("width must be >= 0")
-        self.__width = value
+        else:
+            self.__width = value
 
     @property
     def height(self):
@@ -35,6 +36,7 @@ class Rectangle:
         '''validates height input and defines it'''
         if not type(value) is int:
             raise TypeError("heigth must be integer")
-        if value < 0:
+        elif value < 0:
             raise ValueError("heigth must be >= 0")
-        self.__height = value
+        else:
+            self.__height = value
