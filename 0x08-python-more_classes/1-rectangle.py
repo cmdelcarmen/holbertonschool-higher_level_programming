@@ -1,24 +1,23 @@
 #!/usr/bin/python3
-'''File contains Rectangle class'''
+''' Rectangle class '''
 
 
 class Rectangle:
-    '''defines a class named Rectangle
-    that takes a width and a height'''
+    ''' defines rectangle class with width and height '''
 
     def __init__(self, width=0, height=0):
-        '''creates an instance of a class'''
+        ''' Initializes height and width for rectangle class '''
         self.width = width
         self.height = height
 
     @property
     def width(self):
-        """ getter method """
-        return self.___width
+        ''' Getter method for width '''
+        return self.__width
 
     @width.setter
     def width(self, value):
-        """ setter method """
+        ''' Setter method for width '''
         if type(value) is not int:
             raise TypeError("width must be an integer")
         if value < 0:
@@ -27,12 +26,12 @@ class Rectangle:
 
     @property
     def height(self):
-        """ getter method """
+        ''' Getter method for height '''
         return self.__height
 
     @height.setter
     def height(self, value):
-        """ setter method """
+        '''  Setter method for height '''
         if type(value) is not int:
             raise TypeError("height must be an integer")
         if value < 0:
