@@ -55,6 +55,9 @@ class Rectangle:
 
         str_rectangle = ""
 
+        if self.width == 0 or self.height == 0:
+            return str_rectangle
+
         for y in range(0, self.height):
             for x in range(0, self.width):
                 str_rectangle += '#'
