@@ -67,7 +67,7 @@ class Rectangle:
 
     def __repr__(self):
         '''returns width and heigth of rectangle'''
-        return ("Rectangle({}, {})".format(self.height, self.width))
+        return ("Rectangle({}, {})".format(self.__height, self.__width))
 
     def __del__(self):
         '''prints message when object is deleted'''
@@ -98,4 +98,4 @@ class Rectangle:
         if size < 0:
             raise ValueError("width must be >= 0")
 
-        return cls(size, size)
+        return (cls(size, size))
