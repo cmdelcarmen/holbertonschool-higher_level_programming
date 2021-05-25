@@ -6,4 +6,4 @@ def copy_list(l):
     '''Function returns a copy of a list'''
 
     new_list = l.copy()
-    return(new_list)
+    return (new_list)
