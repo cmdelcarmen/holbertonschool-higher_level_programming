@@ -28,7 +28,7 @@ class Rectangle(BaseGeometry):
     def __init__(self, width, height):
         '''comments'''
         BaseGeometry.integer_validator(self, "string", height)
-        BaseGeometry.integer_validator(self, "string", height)
+        BaseGeometry.integer_validator(self, "string", width)
 
         self.__width = width
         self.__height = height
