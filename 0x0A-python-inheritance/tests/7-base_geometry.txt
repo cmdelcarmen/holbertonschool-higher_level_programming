@@ -1,0 +1,58 @@
+Test file for 7-base_geometry.py
+
+>>> bg_func = __import__('7-base_geometry').BaseGeometry
+
+
+>>> bg = bg_func()
+
+No errors raised:
+=================
+
+>>> bg.integer_validator("test_1", 1)
+
+>>> bg.integer_validator("test_2", 2)
+
+
+
+
+TypeErrors raised:
+==================
+
+>>> bg.integer_validator("test_1", "test_1")
+Traceback (most recent call last):
+...
+TypeError: test_1 must be an integer
+
+
+>>> bg.integer_validator("test_2", 2.5)
+Traceback (most recent call last):
+...
+TypeError: test_2 must be an integer
+
+
+>>> bg.integer_validator("test_3", [1, 2, 3])
+Traceback (most recent call last):
+...
+TypeError: test_3 must be an integer
+
+
+>>> bg.integer_validator("test_4", (4, 4))
+Traceback (most recent call last):
+...
+TypeError: test_4 must be an integer
+
+
+
+ValueErrors raised:
+==================
+
+>>> bg.integer_validator("test_1", 0)
+Traceback (most recent call last):
+...
+ValueError: test_1 must be greater than 0
+
+
+>>> bg.integer_validator("test_2", -2)
+Traceback (most recent call last):
+...
+ValueError: test_2 must be greater than 0
