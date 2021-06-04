@@ -8,4 +8,4 @@ def read_file(filename=""):
     with open(filename) as txt_file:
         lines = txt_file.read()
 
-    print(lines)
+    print(lines, end="")
