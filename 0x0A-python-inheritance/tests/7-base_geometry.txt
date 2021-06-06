@@ -13,27 +13,25 @@ No errors raised:
 >>> bg.integer_validator("test_2", 2)
 
 
-
-
 Errors
 =======
 
 >>> bg.integer_validator(“age”, None)
 Traceback (most recent call last):
 ...
-SyntaxError: invalid character in identifier
+TypeError: age must be an integer
 
 
 >>> integer_validator(“age”, {3, 4})
 Traceback (most recent call last):
 ...
-SyntaxError: invalid character in identifier
+TypeError: age must be an integer
 
 
 >>> bg.integer_validator(“age”, True)
 Traceback (most recent call last):
 ...
-SyntaxError: invalid character in identifier
+TypeError: age must be an integer
 
 
 >>> bg.integer_validator(“age”)
@@ -48,11 +46,10 @@ Traceback (most recent call last):
 TypeError: integer_validator() missing 2 required positional arguments: 'name' and 'value'
 
 
->>> area()
+>>> bg.area()
 Traceback (most recent call last):
 ...
-NameError: name 'area' is not defined
-
+Exception: area() is not implemented
 
 
 TypeErrors raised:
