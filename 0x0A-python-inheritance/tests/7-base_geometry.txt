@@ -15,6 +15,46 @@ No errors raised:
 
 
 
+Errors
+=======
+
+>>> bg.integer_validator(“age”, None)
+Traceback (most recent call last):
+...
+SyntaxError: invalid character in identifier
+
+
+>>> integer_validator(“age”, {3, 4})
+Traceback (most recent call last):
+...
+SyntaxError: invalid character in identifier
+
+
+>>> bg.integer_validator(“age”, True)
+Traceback (most recent call last):
+...
+SyntaxError: invalid character in identifier
+
+
+>>> bg.integer_validator(“age”)
+Traceback (most recent call last):
+...
+SyntaxError: invalid character in identifier
+
+
+>>> bg.integer_validator()
+Traceback (most recent call last):
+...
+TypeError: integer_validator() missing 2 required positional arguments: 'name' and 'value'
+
+
+>>> area()
+Traceback (most recent call last):
+...
+NameError: name 'area' is not defined
+
+
+
 TypeErrors raised:
 ==================
 
