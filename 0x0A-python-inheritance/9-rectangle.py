@@ -22,7 +22,4 @@ class Rectangle(BaseGeometry):
     def __str__(self):
         '''comments'''
 
-        width = self.__width
-        height = self.__height
-
-        return ("[{}] {}/{}".format(self.__class__.__name__, width, height))
+        return ("[Rectangle] {}/{}".format(self.__width, self.__height))
