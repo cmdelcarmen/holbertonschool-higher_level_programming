@@ -93,7 +93,7 @@ class Rectangle(Base):
         '''comments'''
         str_rectangle = "[Rectangle] "
         str_rectangle += "({}) ".format(self.id)
-        str_rectangle += "{}/{} ".format(self.__x, self.__y)
+        str_rectangle += "{}/{} - ".format(self.__x, self.__y)
         str_rectangle += "{}/{}".format(self.__width, self.__height)
         return str_rectangle
 
