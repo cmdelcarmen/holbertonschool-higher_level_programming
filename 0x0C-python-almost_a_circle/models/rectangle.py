@@ -97,7 +97,7 @@ class Rectangle(Base):
         str_rectangle += "{}/{}".format(self.__width, self.__height)
         return str_rectangle
 
-    def update(self, *args):
+    def update(self, *args, **kwargs):
         '''comments'''
         counter = 0
 
@@ -107,7 +107,8 @@ class Rectangle(Base):
             self.x = int(sys.argv[3])
             self.y = int(sys.argv[4])
             self.id = int(sys.argv[5])
-        else:
+
+        if args is not None:
             for argument in args:
                 if counter == 1:
                     self.width = argument
@@ -124,3 +125,16 @@ class Rectangle(Base):
                 if counter == 0:
                     self.id = argument
                 counter += 1
+
+        if kwargs is not None:
+            for key in kwargs:
+                if key == "height":
+                    self.height = kwargs[key]
+                if key == "width":
+                    self.width = kwargs[key]
+                if key == "x":
+                    self.x = kwargs[key]
+                if key == "y":
+                    self.y = kwargs[key]
+                if key == "id":
+                    self.id = kwargs[key]
