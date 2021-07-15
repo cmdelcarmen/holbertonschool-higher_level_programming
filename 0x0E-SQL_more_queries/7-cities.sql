@@ -1,0 +1,2 @@
+-- Written by Caroline Del Carmen for Holberton Programming School
+-- Script 
