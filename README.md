@@ -15,8 +15,7 @@
   | [0x04-python-more_data_structures](https://github.com/cmdelcarmen/holbertonschool-higher_level_programming/tree/main/0x04-python-more_data_structures) | Set, iterating though a set, dictionaries, lambda, map, reduce, and filter functions |
   | [0x05. Python - Exceptions](https://github.com/cmdelcarmen/holbertonschool-higher_level_programming/tree/main/0x05-python-exceptions) | What are exceptions and how to use them, how to handle them and their purpose |
   | [0x06. Python - Classes and Objects](https://github.com/cmdelcarmen/holbertonschool-higher_level_programming/tree/main/0x06-python-classes) | Please reference read me file from repo. |
-  | []() |  |
-  | []() |  |
+  | [0x07. Python - Test-driven development](https://github.com/cmdelcarmen/holbertonschool-higher_level_programming/tree/main/0x07-python-test_driven_development) | Why tests are important, how to write Docstrings to create tests, how to find edgecases, and how to write an unittest |
   | []() |  |
   | []() |  |
   | []() |  |
