@@ -13,5 +13,15 @@
   | [0x02-python-import_modules ](https://github.com/cmdelcarmen/holbertonschool-higher_level_programming/tree/main/0x02-python-import_modules) | Import functions, creating modules, dir(), command line arguments, how to prevent code in script from executing when imported |
   | [0x03-python-data_structures](https://github.com/cmdelcarmen/holbertonschool-higher_level_programming/tree/main/0x03-python-data_structures) | Lists, tuples, list comprensions, tuple packing, and del |
   | [0x04-python-more_data_structures](https://github.com/cmdelcarmen/holbertonschool-higher_level_programming/tree/main/0x04-python-more_data_structures) | Set, iterating though a set, dictionaries, lambda, map, reduce, and filter functions |
+  | [0x05. Python - Exceptions](https://github.com/cmdelcarmen/holbertonschool-higher_level_programming/tree/main/0x05-python-exceptions) | What are exceptions and how to use them, how to handle them and their purpose |
+  | [0x06. Python - Classes and Objects](https://github.com/cmdelcarmen/holbertonschool-higher_level_programming/tree/main/0x06-python-classes) | Please reference read me file from repo. |
+  | []() |  |
+  | []() |  |
+  | []() |  |
+  | []() |  |
+  | []() |  |
+  | []() |  |
+  | []() |  |
+
 
 
