@@ -3,7 +3,12 @@
  * Script prints a message depending of the number arguments passed
  */
 
-import { argv } from 'process';
+const args = process.argv;
 
-let args = process.argv[2];
-console.log(args);
+if (args.length <= 2) {
+  console.log('No argument');
+} else if (args.length === 3) {
+  console.log('Argument found');
+} else {
+  console.log('Arguments found');
+}
