@@ -1,0 +1,5 @@
+#!/bin/sh
+for file in *.js; do
+    cat cmd $file >> $file.$$
+	    mv $file.$$ $file
+done
