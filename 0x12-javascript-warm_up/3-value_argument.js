@@ -1,4 +1,5 @@
 #!/usr/bin/node
+
 /*
  * Script prints first argument passed to it.
  */
