@@ -22,7 +22,7 @@ function bubbleSort (arr) {
 }
 
 const arg = process.argv;
-const array = arg.filter(function (x) { return (!isNaN(x)); });
+const array = arg.filter(function (x) { return (!isNaN(x));});
 let idx = 0;
 
 if (arg.length <= 2 || arg.length <= 3) {
