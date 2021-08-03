@@ -4,7 +4,7 @@
  * Script searches the 2nd biggest int in a list.
  */
 
-function bblSort (arr) {
+function bubbleSort (arr) {
   let i;
   let j;
   let temp;
@@ -23,9 +23,13 @@ function bblSort (arr) {
 
 const arg = process.argv;
 const array = arg.filter(function (x) { return (!isNaN(x)); });
+let idx = 0;
 
 if (arg.length <= 2) {
   console.log('0');
 } else {
-  bblSort(array);
+  for (idx = 0; idx < array.length; idx++) {
+    array[idx] = parseInt(array[idx]);
+  }
+  bubbleSort(array);
 }
