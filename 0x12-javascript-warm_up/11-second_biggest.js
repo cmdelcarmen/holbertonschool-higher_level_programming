@@ -1,7 +1,7 @@
 #!/usr/bin/node
 
 /*
- * Script that prints the addition of 2 integers
+ * Script searches the 2nd biggest int in a list.
  */
 
 function bblSort (arr) {
@@ -18,16 +18,14 @@ function bblSort (arr) {
       }
     }
   }
-  console.log(arr);
   console.log(arr[arr.length - 2]);
 }
 
 const arg = process.argv;
-const array = arg.filter(function parseInt (x) { return (!isNaN(x)); });
+const array = arg.filter(function (x) { return (!isNaN(x)); });
 
 if (arg.length <= 2) {
   console.log('0');
 } else {
-  console.log(array);
   bblSort(array);
 }
