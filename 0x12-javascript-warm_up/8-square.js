@@ -14,7 +14,7 @@ if (isNaN(args[2])) {
 } else {
   for (idx = 0; idx < parseInt(args[2]); idx++) {
     for (idx2 = 0; idx2 < parseInt(args[2]); idx2++) {
-      square += 'x';
+      square += 'X';
     }
     square += '\n';
   }
