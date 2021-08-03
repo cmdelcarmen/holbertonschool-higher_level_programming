@@ -25,7 +25,7 @@ const arg = process.argv;
 const array = arg.filter(function (x) { return (!isNaN(x)); });
 let idx = 0;
 
-if (arg.length <= 2) {
+if (arg.length <= 2 || arg.length <= 3) {
   console.log('0');
 } else {
   for (idx = 0; idx < array.length; idx++) {
