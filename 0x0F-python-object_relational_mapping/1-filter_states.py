@@ -17,7 +17,7 @@ if __name__ == "__main__":
 
     cursor = database.cursor()
 
-    sql_query = "SELECT * FROM states WHERE name REGEXP '^[n]'\
+    sql_query = "SELECT * FROM states WHERE name LIKE BINARY 'N%'\
             ORDER BY states.id ASC"
 
     try:
