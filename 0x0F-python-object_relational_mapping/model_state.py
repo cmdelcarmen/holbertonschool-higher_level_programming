@@ -1,5 +1,6 @@
 #!/usr/bin/python3
-''' Defines class State ''''
+''' Defines class State that inherits from
+Base '''
 
 
 from sqlalchemy.ext.declarative import declarative_base
@@ -10,6 +11,7 @@ Base = declarative_base()
 
 class State(Base):
     ''' Defines a State '''
+
     __tablename__ = 'states'
 
     id = Column(Integer, primary_key=True)
