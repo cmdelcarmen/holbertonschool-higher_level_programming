@@ -19,7 +19,7 @@ if __name__ == "__main__":
         flag = 0
         for state in session.query(State).order_by(State.id):
             if state_arg == state.name:
-                print("{}: {}".format(state.id, state.name))
+                print("{}".format(state.id))
                 flag = 1
 
         if flag == 0:
