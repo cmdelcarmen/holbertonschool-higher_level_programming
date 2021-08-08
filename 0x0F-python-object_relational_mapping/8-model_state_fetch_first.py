@@ -15,10 +15,5 @@ if __name__ == "__main__":
         Session = sessionmaker(engine)
         session = Session()
 
-        count = 0
-        for state in session.query(State).order_by(State.id):
-            print("{}: {}".format(state.id, state.name))
-            count = 1
-            if count == 1:
-                break
-
+        state = session.query(State).order_by(State.id).first():
+        print("{}: {}".format(state.id, state.name))
