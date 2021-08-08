@@ -18,4 +18,4 @@ if __name__ == "__main__":
         for state in session.query(State).order_by(State.id):
             if state.id == 2:
                 state.name = "New Mexico"
-                print(state.name)
+                session.commit()
