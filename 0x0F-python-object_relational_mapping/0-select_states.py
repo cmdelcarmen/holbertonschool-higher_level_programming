@@ -1,5 +1,5 @@
 #!/usr/bin/python3
-
+'''Script lists all states from the database hbtn_0e_0_usa '''
 
 import sys
 import MySQLdb
@@ -13,9 +13,6 @@ if __name__ == "__main__":
 
     ''' Open the connection to the databse '''
     database = MySQLdb.connect(host, user, password, database)
-
-    print(type(database))
-    print(database)
 
     cursor = database.cursor()
 
