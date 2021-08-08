@@ -11,7 +11,8 @@ if __name__ == "__main__":
     user = sys.argv[1]
     password = sys.argv[2]
     database = sys.argv[3]
-    state = sys.argv[4]
+    state = sys.argv[4].split(' ')
+    state = state[0]
 
     ''' Open the connection to the databse '''
     database = MySQLdb.connect(host, user, password, database)
