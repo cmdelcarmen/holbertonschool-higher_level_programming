@@ -8,14 +8,14 @@ import sys
 
 
 if __name__ == "__main__":
+
     repo = sys.argv[1]
-    user = sys.argv[2]
-    url = "https://api.github.com/repos/{}/{}/commits".format(user, repo)
+    owner = sys.argv[2]
+    url = "https://api.github.com/repos/{}/{}/commits".format(owner, repo)
+    commits = requests.get(url).json()
 
-    request = requests.get(url)
-    request = request.json()
+    print(commits[0])
 
-    for i in range(10 if len(request) > 10 else len(request)):
-        author = request[i].get('commit').get('author').get('name')
-        sha = request[i].get('sha')
-        print("{}: {}".format(sha, author))
+    for index in range(0, 10):
+        print(commits[index].get("sha"), end=": ")
+        print(commits[index].get("commit").get("author").get("name"))
