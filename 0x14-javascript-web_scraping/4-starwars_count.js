@@ -33,8 +33,8 @@ request(URL, function (error, res, content) {
     if (nameOfCharacter == "Wedge Antilles") {
       count++;
       console.log(count);
-      console.log(movie);
       }
+  console.log(movie);
   });
   // console.log(count);
   }
