@@ -18,8 +18,8 @@ req(urlAPI, (error, res, content) => {
 
   for (const task of taskList) {
     if (task.completed) {
-      const user_id = task.userId;
-      completedTasks[user_id] = (completedTasks[user_id] + 1 || 1);
+      const userID = task.userId;
+      completedTasks[userID] = (completedTasks[userID] + 1 || 1);
     }
   }
   console.log(completedTasks);
