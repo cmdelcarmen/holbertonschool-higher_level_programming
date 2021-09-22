@@ -1,1 +1,3 @@
+Please keep in mind while looking at the code, in smaller projects we are often restricted when it comes to libraries and built-in functions we can use. We also may have certain guidelines to follow not aiming for efficiency, but maybe a new programming concept we are learning. Other times we have an exact line count to match.
+
 ![image](https://user-images.githubusercontent.com/77739870/126568458-7cc2c32a-aba5-4b86-b9c3-f856364f51e0.png)
