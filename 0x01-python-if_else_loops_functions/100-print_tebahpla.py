@@ -1,6 +1,7 @@
 #!/usr/bin/python3
 '''
-    Write a function that computes a to the power of b and return the value.
+    Write a program that prints the ASCII alphabet, in reverse order, alternating lowercase
+    and uppercase (z in lowercase and Y in uppercase) , not followed by a new line.
 '''
 for letter in range(90, 64, -1):
     if letter % 2 == 0:
