@@ -1,6 +1,7 @@
 #!/usr/bin/python3
-
-
+'''
+    Write a function that returns the weighted average of all integers tuple
+'''
 def weight_average(my_list=[]):
 
     average = 0

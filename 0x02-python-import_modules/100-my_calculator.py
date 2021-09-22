@@ -1,5 +1,7 @@
 #!/usr/bin/python3
-
+'''
+    Write a program that imports all functions from the file calculator_1.py and handles basic operations.
+'''
 from calculator_1 import add, sub, mul, div
 from sys import argv
 

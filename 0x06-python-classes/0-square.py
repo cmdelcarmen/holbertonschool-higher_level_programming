@@ -1,5 +1,7 @@
 #!/usr/bin/python3
-'''this module define an object class called Squares'''
+'''
+    Write an empty class Square that defines a square.
+'''
 
 
 class Square:

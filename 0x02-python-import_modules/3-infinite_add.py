@@ -1,5 +1,7 @@
 #!/usr/bin/python3
-
+'''
+    Write a program that prints the result of the addition of all arguments
+'''
 import sys
 
 if __name__ == "__main__":

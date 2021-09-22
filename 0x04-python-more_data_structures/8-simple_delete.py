@@ -1,6 +1,7 @@
 #!/usr/bin/python3
-
-
+'''
+    Write a function that deletes a key in a dictionary.
+'''
 def simple_delete(a_dictionary, key=""):
 
     sorted(a_dictionary)

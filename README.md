@@ -1,8 +1,4 @@
 <h1 align="center">Python 3.4.3 🐍 </h1>
-
-<p align="center">
-  <img width="700" height="350" src="https://i.pinimg.com/originals/d1/fb/d3/d1fbd34f47639a88b60715e6936d6dbf.gif">
-  </p>
   
   <h3 align="center">Styled using PEP 8 1.7 guidelines on Ubuntu 14.04 LTS.</h3>
 
@@ -16,7 +12,7 @@
   | [0x05. Python - Exceptions](https://github.com/cmdelcarmen/holbertonschool-higher_level_programming/tree/main/0x05-python-exceptions) | What are exceptions and how to use them, how to handle them and their purpose |
   | [0x06. Python - Classes and Objects](https://github.com/cmdelcarmen/holbertonschool-higher_level_programming/tree/main/0x06-python-classes) | Please reference read me file from repo. |
   | [0x07. Python - Test-driven development](https://github.com/cmdelcarmen/holbertonschool-higher_level_programming/tree/main/0x07-python-test_driven_development) | Why tests are important, how to write Docstrings to create tests, how to find edgecases, and how to write an unittest |
-  | [test]() |  |
+  | []() |  |
   | []() |  |
   | []() |  |
   | []() |  |
