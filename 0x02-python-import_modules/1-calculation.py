@@ -1,5 +1,8 @@
 #!/usr/bin/python3
-
+'''
+    Write a program that imports functions from the file calculator_1.py,
+    does some Maths, and prints the result.
+'''
 
 from calculator_1 import add, sub, mul, div
 
