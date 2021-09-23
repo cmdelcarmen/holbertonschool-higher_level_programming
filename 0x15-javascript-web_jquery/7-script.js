@@ -1,10 +1,3 @@
-$(function () {
-  $.ajax({
-    crossDomain: true,
-    url: 'https://swapi.co/api/people/5/?format=json',
-    success: function (data) {
-      const name = data.name;
-      $('DIV#character').text(name);
-    }
-  });
+$.get( "https://swapi-api.hbtn.io/api/people/5/?format=json", function( response ) {
+  $('DIV#character').text(response.name);
 });
